@@ -184,6 +184,31 @@ a {
   padding: 48px;
 }
 
+.hero-ornaments {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.hero-ornament {
+  position: absolute;
+  width: min(240px, 40vw);
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.hero-ornament-left {
+  left: -4%;
+  top: 8%;
+  transform: translateX(-40px);
+}
+
+.hero-ornament-right {
+  right: -6%;
+  bottom: 6%;
+  transform: translateX(40px);
+}
+
 .hero-graphic {
   width: min(420px, 90%);
   filter: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.6));
@@ -197,9 +222,24 @@ a {
   transform: translateY(0) scale(1);
 }
 
+.hero-visual.is-visible .hero-ornament {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .hero-out .hero-graphic {
   opacity: 0;
   transform: translateY(-24px) scale(0.98);
+}
+
+.hero-out .hero-ornament-left {
+  opacity: 0;
+  transform: translateX(-60px);
+}
+
+.hero-out .hero-ornament-right {
+  opacity: 0;
+  transform: translateX(60px);
 }
 
 .hero-glow {
