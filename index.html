@@ -10,7 +10,7 @@
   <link rel="preload" href="./images/profile-00.svg" as="image" type="image/svg+xml">
 </head>
 <body>
-  <div class="page">
+  <div id="top" class="page">
     <header class="site-header">
       <div class="container header-inner">
         <a class="logo" href="#hero">CM</a>
@@ -24,7 +24,7 @@
     </header>
 
     <nav class="rail-nav" aria-label="Section navigation">
-      <a class="rail-stop" href="#hero" data-section="hero">
+      <a class="rail-stop" href="#top" data-section="hero">
         <span class="rail-dot"></span>
         <span class="rail-label">Hero</span>
       </a>
@@ -51,9 +51,7 @@
     </nav>
 
     <main>
-      <section id="hero" class="section hero" data-hero>
-        <img class="section-ornament reveal ornament-hero-left" src="./images/illustration-section-03.svg" alt="" aria-hidden="true">
-        <img class="section-ornament reveal ornament-hero-right" src="./images/illustration-section-01.svg" alt="" aria-hidden="true">
+      <section id="hero" class="section hero illustration-section-01" data-hero>
         <div class="container hero-grid">
           <div class="hero-content">
             <p class="eyebrow">Portfolio</p>
@@ -85,8 +83,7 @@
         </div>
       </section>
 
-      <section id="features" class="section reveal">
-        <img class="section-ornament reveal ornament-features" src="./images/illustration-section-02.svg" alt="" aria-hidden="true">
+      <section id="features" class="section reveal illustration-section-03">
         <div class="container">
           <div class="section-header">
             <p class="eyebrow">Project Showcase</p>
@@ -110,8 +107,7 @@
         </div>
       </section>
 
-      <section id="projects" class="section reveal">
-        <img class="section-ornament reveal ornament-projects" src="./images/illustration-section-04.svg" alt="" aria-hidden="true">
+      <section id="projects" class="section reveal illustration-section-04">
         <div class="container">
           <div class="section-header">
             <p class="eyebrow">Project Showcase</p>
@@ -186,8 +182,7 @@
         </div>
       </section>
 
-      <section id="skills" class="section reveal">
-        <img class="section-ornament reveal ornament-skills" src="./images/illustration-section-05.svg" alt="" aria-hidden="true">
+      <section id="skills" class="section reveal illustration-section-03">
         <div class="container">
           <div class="section-header">
             <p class="eyebrow">My core competencies</p>
@@ -210,7 +205,7 @@
         </div>
       </section>
 
-      <section id="impact" class="section reveal">
+      <section id="impact" class="section reveal illustration-section-04">
         <div class="container">
           <div class="section-header">
             <p class="eyebrow">Impact</p>
@@ -233,16 +228,33 @@
         </div>
       </section>
 
-      <section id="contact" class="section contact reveal">
+      <section id="contact" class="section contact reveal illustration-section-05">
         <div class="container contact-inner">
           <div>
             <h2>Let’s build what’s next.</h2>
             <p>Reach out to discuss product strategy, platform modernization, or AI-driven delivery.</p>
           </div>
-          <a class="button primary" href="mailto:chris.reviresco@gmail.com">Start a conversation</a>
+          <button class="button primary contact-trigger" type="button">Start a conversation</button>
         </div>
       </section>
     </main>
+
+    <dialog class="contact-dialog" id="contact-dialog" aria-labelledby="contact-dialog-title">
+      <form class="contact-form" method="dialog" novalidate>
+        <h3 id="contact-dialog-title">Start the conversation</h3>
+        <p>Share what you'd like to do and I'll reply directly.</p>
+        <label for="contact-message">What would you like to do?</label>
+        <textarea id="contact-message" name="message" rows="4" required></textarea>
+        <label for="contact-email">Your email (optional)</label>
+        <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+        <div class="contact-actions">
+          <button class="button ghost" value="cancel">Cancel</button>
+          <button class="button primary" id="contact-send" type="submit" value="send">Send email</button>
+        </div>
+        <p class="contact-status" role="status" aria-live="polite"></p>
+        <p class="contact-note">Your message stays on your device and is only used to draft the email.</p>
+      </form>
+    </dialog>
 
     <footer class="site-footer">
       <div class="container footer-inner">
