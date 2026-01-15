@@ -3,6 +3,7 @@ const revealElements = document.querySelectorAll(".reveal");
 const railStops = document.querySelectorAll(".rail-stop");
 const heroVisual = document.querySelector(".hero-visual");
 const heroSection = document.querySelector("[data-hero]");
+const railNav = document.querySelector(".rail-nav");
 
 const activateStop = (id) => {
   railStops.forEach((stop) => {
@@ -16,12 +17,22 @@ const activateStop = (id) => {
   });
 };
 
+const updateRailProgress = (id) => {
+  if (!railNav) return;
+  const stops = Array.from(railStops);
+  const index = stops.findIndex((stop) => stop.dataset.section === id);
+  if (index < 0) return;
+  const percent = stops.length > 1 ? (index / (stops.length - 1)) * 100 : 0;
+  railNav.style.setProperty("--rail-progress", `${percent}%`);
+};
+
 if ("IntersectionObserver" in window) {
   const sectionObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           activateStop(entry.target.id);
+          updateRailProgress(entry.target.id);
         }
       });
     },
@@ -63,5 +74,6 @@ if ("IntersectionObserver" in window) {
   }
   if (sectionElements[0]) {
     activateStop(sectionElements[0].id);
+    updateRailProgress(sectionElements[0].id);
   }
 }
