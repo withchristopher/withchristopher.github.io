@@ -53,6 +53,47 @@ a {
 .section {
   padding: var(--section-gap) 0;
   position: relative;
+  overflow: hidden;
+}
+
+.section-ornament {
+  position: absolute;
+  width: min(520px, 70vw);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.section-ornament.is-visible {
+  opacity: 0.8;
+  transform: translateY(0);
+}
+
+.ornament-hero-left {
+  left: -12%;
+  top: -6%;
+}
+
+.ornament-hero-right {
+  right: -10%;
+  top: 10%;
+}
+
+.ornament-features {
+  right: -14%;
+  top: -8%;
+}
+
+.ornament-projects {
+  left: -16%;
+  top: 10%;
+}
+
+.ornament-skills {
+  right: -18%;
+  bottom: -12%;
 }
 
 .eyebrow {
@@ -150,6 +191,19 @@ a {
   align-items: center;
 }
 
+.hero-grid,
+.hero-logos,
+.section-header,
+.feature-grid,
+.project-grid,
+.skills-grid,
+.impact-grid,
+.contact-inner,
+.footer-inner {
+  position: relative;
+  z-index: 1;
+}
+
 .hero-content h1 {
   font-size: clamp(2.8rem, 5vw, 4.6rem);
   line-height: 1.05;
@@ -233,7 +287,7 @@ a {
 .impact-grid {
   display: grid;
   gap: 24px;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .feature-card,
@@ -258,6 +312,19 @@ a {
 .project-card {
   display: grid;
   gap: 16px;
+}
+
+.project-media {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #0b1118;
+}
+
+.project-media img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .project-header {
