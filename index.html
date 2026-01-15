@@ -17,37 +17,16 @@
         <nav class="primary-nav" aria-label="Primary">
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
-          <a href="#impact">Impact</a>
           <a class="button ghost" href="mailto:chris.reviresco@gmail.com">Contact</a>
         </nav>
       </div>
     </header>
 
-    <nav class="rail-nav" aria-label="Section navigation">
-      <a class="rail-stop" href="#top" data-section="hero">
-        <span class="rail-dot"></span>
-        <span class="rail-label">Hero</span>
-      </a>
-      <a class="rail-stop" href="#features" data-section="features">
-        <span class="rail-dot"></span>
-        <span class="rail-label">Focus</span>
-      </a>
-      <a class="rail-stop" href="#projects" data-section="projects">
-        <span class="rail-dot"></span>
-        <span class="rail-label">Projects</span>
-      </a>
-      <a class="rail-stop" href="#skills" data-section="skills">
-        <span class="rail-dot"></span>
-        <span class="rail-label">Skills</span>
-      </a>
-      <a class="rail-stop" href="#impact" data-section="impact">
-        <span class="rail-dot"></span>
-        <span class="rail-label">Impact</span>
-      </a>
-      <a class="rail-stop" href="#contact" data-section="contact">
-        <span class="rail-dot"></span>
-        <span class="rail-label">Contact</span>
-      </a>
+    <nav class="side-rail" aria-label="Section navigation">
+      <a href="#features" data-section="features">Focus</a>
+      <a href="#projects" data-section="projects">Projects</a>
+      <a href="#skills" data-section="skills">Skills</a>
+      <a href="#about" data-section="about">About</a>
     </nav>
 
     <main>
@@ -57,14 +36,13 @@
             <p class="eyebrow">Portfolio</p>
             <h1>Hi, my name is <br> Christopher Maxwell</h1>
             <p class="lead">
-              I am a multi-disciplinary engineer and currently building a<br> next generation crowd-lending platform at Oblinor.
+              I am a multi-disciplinary engineer and currently helping customers transition to AI-accelerated SDLC.
             </p>
             <div class="cta-group">
-              <a class="button primary" href="mailto:chris.reviresco@gmail.com">Connect with me</a>
               <a class="button ghost" href="./images/Christopher_Maxwell-CV.pdf" download="Christopher_Maxwell-CV">Download CV</a>
             </div>
             <div class="hero-metadata">
-              <span>KAVIA AI</span>
+              <a href="https://kavia.ai" target="_blank" rel="noopener noreferrer">KAVIA AI</a>
               <span>Product + Engineering</span>
               <span>Cape Town</span>
             </div>
@@ -86,7 +64,7 @@
       <section id="features" class="section reveal illustration-section-03">
         <div class="container">
           <div class="section-header">
-            <p class="eyebrow">Project Showcase</p>
+            <p class="eyebrow">Focus</p>
             <h2>Recent work across product, platform, and experience.</h2>
             <p>Selected projects spanning AI, infrastructure, and product-led growth.</p>
           </div>
@@ -201,30 +179,34 @@
               <h3>Reducing technical debt</h3>
               <p>Improve system health to keep teams shipping at speed.</p>
             </div>
+            <div class="skill-card">
+              <h3>Increasing employee retention</h3>
+              <p>Build cultures and systems that keep teams engaged and thriving.</p>
+            </div>
+            <div class="skill-card">
+              <h3>Running complex builds asynchronously</h3>
+              <p>Coordinate parallel delivery streams with reliable technical oversight.</p>
+            </div>
+            <div class="skill-card">
+              <h3>Minimising cloud spend</h3>
+              <p>Optimize infrastructure costs without sacrificing performance.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="impact" class="section reveal illustration-section-04">
+      <section id="about" class="section reveal illustration-section-04">
         <div class="container">
           <div class="section-header">
-            <p class="eyebrow">Impact</p>
-            <h2>Delivering outcomes that move the needle.</h2>
+            <p class="eyebrow">About me</p>
+            <h2>Building secure, end-to-end digital platforms.</h2>
           </div>
-          <div class="impact-grid">
-            <div class="impact-card">
-              <h3>60% faster delivery</h3>
-              <p>Implemented AI-assisted SDLC workflows to reduce release cycles.</p>
-            </div>
-            <div class="impact-card">
-              <h3>99.9% uptime</h3>
-              <p>Architected resilient platforms across multi-region infrastructure.</p>
-            </div>
-            <div class="impact-card">
-              <h3>10+ teams aligned</h3>
-              <p>Built operating models that scale cross-functional delivery.</p>
-            </div>
-          </div>
+          <p class="bio-text">
+            I build secure, full-stack web applications from the ground up. My work includes a Learning Management System, a text redaction tool, and an eCommerce platform.
+          </p>
+          <p class="bio-text">
+            I’m self-taught across Python, JavaScript, HTML/CSS, React, SQL and NoSQL databases, and REST/GraphQL APIs. I also hold Cisco CCNP certifications in Routing & Switching and Security, with academic degrees in Mathematics and Physics from South Africa.
+          </p>
         </div>
       </section>
 
@@ -248,7 +230,7 @@
         <label for="contact-email">Your email (optional)</label>
         <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
         <div class="contact-actions">
-          <button class="button ghost" value="cancel">Cancel</button>
+          <button class="button ghost" type="button" data-contact-cancel>Cancel</button>
           <button class="button primary" id="contact-send" type="submit" value="send">Send email</button>
         </div>
         <p class="contact-status" role="status" aria-live="polite"></p>

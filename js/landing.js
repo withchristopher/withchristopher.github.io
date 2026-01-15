@@ -1,28 +1,52 @@
 const sectionElements = document.querySelectorAll("section");
 const revealElements = document.querySelectorAll(".reveal");
-const railStops = document.querySelectorAll(".rail-stop");
 const heroVisual = document.querySelector(".hero-visual");
 const heroSection = document.querySelector("[data-hero]");
-const railNav = document.querySelector(".rail-nav");
-const topStop = document.querySelector('.rail-stop[data-section="hero"]');
+const sideRail = document.querySelector(".side-rail");
+const sideRailLinks = sideRail ? sideRail.querySelectorAll("a[data-section]") : [];
 const contactTrigger = document.querySelector(".contact-trigger");
 const contactDialog = document.getElementById("contact-dialog");
 const contactForm = contactDialog ? contactDialog.querySelector(".contact-form") : null;
 const contactStatus = contactDialog ? contactDialog.querySelector(".contact-status") : null;
+const contactCancel = contactDialog ? contactDialog.querySelector("[data-contact-cancel]") : null;
 
 const FORM_ENDPOINT = "https://formspree.io/f/xpqqwlnk";
 
-const getActiveSection = () => {
+const railSections = sideRailLinks.length
+  ? Array.from(sideRailLinks)
+      .map((link) => document.querySelector(link.getAttribute("href")))
+      .filter(Boolean)
+  : [];
+
+const updateRailActive = (id) => {
+  sideRailLinks.forEach((link) => {
+    const isActive = link.dataset.section === id;
+    link.classList.toggle("active", isActive);
+    if (isActive) {
+      link.setAttribute("aria-current", "true");
+    } else {
+      link.removeAttribute("aria-current");
+    }
+  });
+};
+
+const getRailActiveSection = () => {
+  if (!railSections.length) return null;
+  if (window.scrollY < 80) {
+    return document.getElementById("hero");
+  }
   let activeSection = null;
   let minDistance = Number.POSITIVE_INFINITY;
-  const viewportMid = window.innerHeight * 0.5;
+  const viewportHeight = window.innerHeight;
+  const viewportMid = viewportHeight * 0.5;
 
-  sectionElements.forEach((section) => {
+  railSections.forEach((section) => {
     const rect = section.getBoundingClientRect();
-    if (rect.bottom < 0 || rect.top > window.innerHeight) {
+    if (rect.bottom <= 0 || rect.top >= viewportHeight) {
       return;
     }
-    const distance = Math.abs(rect.top - viewportMid);
+    const sectionCenter = rect.top + rect.height / 2;
+    const distance = Math.abs(sectionCenter - viewportMid);
     if (distance < minDistance) {
       minDistance = distance;
       activeSection = section;
@@ -32,43 +56,13 @@ const getActiveSection = () => {
   return activeSection;
 };
 
-const activateStop = (id) => {
-  railStops.forEach((stop) => {
-    const isActive = stop.dataset.section === id;
-    stop.classList.toggle("active", isActive);
-    if (isActive) {
-      stop.setAttribute("aria-current", "true");
-    } else {
-      stop.removeAttribute("aria-current");
-    }
-  });
+const syncRail = () => {
+  const activeSection = getRailActiveSection();
+  if (activeSection) {
+    updateRailActive(activeSection.id);
+  }
 };
-
-const updateRailProgress = (id) => {
-  if (!railNav) return;
-  const stops = Array.from(railStops);
-  const index = stops.findIndex((stop) => stop.dataset.section === id);
-  if (index < 0) return;
-  const percent = stops.length > 1 ? (index / (stops.length - 1)) * 100 : 0;
-  railNav.style.setProperty("--rail-progress", `${percent}%`);
-};
-
 if ("IntersectionObserver" in window) {
-  const sectionObserver = new IntersectionObserver(
-    () => {
-      const activeSection = getActiveSection();
-      if (!activeSection) return;
-      activateStop(activeSection.id);
-      updateRailProgress(activeSection.id);
-    },
-    {
-      threshold: [0, 0.25, 0.5, 0.75, 1],
-      rootMargin: "-40% 0px -40% 0px",
-    }
-  );
-
-  sectionElements.forEach((section) => sectionObserver.observe(section));
-
   const revealObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -100,38 +94,33 @@ if ("IntersectionObserver" in window) {
   if (heroVisual) {
     heroVisual.classList.add("is-visible");
   }
-  if (sectionElements[0]) {
-    activateStop(sectionElements[0].id);
-    updateRailProgress(sectionElements[0].id);
-  }
 }
 
-if (topStop) {
-  topStop.addEventListener("click", (event) => {
-    if (topStop.getAttribute("href") !== "#top") return;
-    event.preventDefault();
-    window.scrollTo({ top: 0, behavior: "smooth" });
+if (sideRailLinks.length) {
+  let railTicking = false;
+  const onRailScroll = () => {
+    if (railTicking) return;
+    railTicking = true;
+    window.requestAnimationFrame(() => {
+      railTicking = false;
+      syncRail();
+    });
+  };
+  window.addEventListener("load", syncRail);
+  window.addEventListener("scroll", onRailScroll);
+  window.addEventListener("resize", onRailScroll);
+  sideRailLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const href = link.getAttribute("href") || "";
+      if (!href.startsWith("#")) return;
+      event.preventDefault();
+      const target = document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
   });
 }
-
-const scrollToTarget = (target) => {
-  if (!target) return;
-  target.scrollIntoView({ behavior: "smooth", block: "start" });
-};
-
-railStops.forEach((stop) => {
-  stop.addEventListener("click", (event) => {
-    const href = stop.getAttribute("href") || "";
-    if (!href.startsWith("#")) return;
-    event.preventDefault();
-    if (href === "#top") {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-      return;
-    }
-    const target = document.querySelector(href);
-    scrollToTarget(target);
-  });
-});
 
 const sendContactEmail = async (message, email) => {
   if (!FORM_ENDPOINT || FORM_ENDPOINT.includes("your-form-id")) {
@@ -206,5 +195,11 @@ if (contactForm) {
           sendButton.disabled = false;
         }
       });
+  });
+}
+
+if (contactCancel && contactDialog) {
+  contactCancel.addEventListener("click", () => {
+    contactDialog.close("cancel");
   });
 }
