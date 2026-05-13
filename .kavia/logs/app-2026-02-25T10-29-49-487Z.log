@@ -1,0 +1,229 @@
+================================================================================
+Kavia VS Code Extension - Application Log
+Session ID: 2026-02-25T10-29-49-487Z
+Started: 2026-02-25T10:29:49.487Z
+================================================================================
+2026-02-25T10:29:49.487Z
+[2026-02-25T10:29:49.487Z] [INFO] Streaming logger: /Users/chrismaxwell/code/withchristopher.github.io/.kavia/logs/streaming-2026-02-25T10-29-49-487Z.log
+2026-02-25T10:29:49.487Z
+[2026-02-25T10:29:49.487Z] [INFO] App logger: /Users/chrismaxwell/code/withchristopher.github.io/.kavia/logs/app-2026-02-25T10-29-49-487Z.log
+2026-02-25T10:29:49.488Z
+[2026-02-25T10:29:49.488Z] [ERROR] ❌ Failed to load .env file: ENOENT: no such file or directory, open '/Users/chrismaxwell/.vscode/extensions/.env'
+2026-02-25T10:29:49.488Z
+[2026-02-25T10:29:49.488Z] [INFO] SessionManager initialized
+2026-02-25T10:29:49.488Z
+[2026-02-25T10:29:49.488Z] [INFO] Session restored from storage
+2026-02-25T10:29:49.488Z
+[2026-02-25T10:29:49.488Z] [INFO] ✅ StreamingEditorService initialized
+2026-02-25T10:29:49.488Z
+[2026-02-25T10:29:49.488Z] [INFO] 🔌 Using WebSocket URL: wss://websocket-server-kavia-qa.cloud.kavia.ai
+2026-02-25T10:29:49.488Z
+[2026-02-25T10:29:49.488Z] [INFO] ✅ CGAWebSocketService instance #1 created
+2026-02-25T10:29:49.488Z
+[2026-02-25T10:29:49.488Z] [INFO] WebSocket instance info:
+[
+  {
+    "instanceId": 1,
+    "totalInstances": 1,
+    "isConnected": false
+  }
+]
+2026-02-25T10:29:49.489Z
+[2026-02-25T10:29:49.489Z] [INFO] ✅ WebSocket status indicator created
+2026-02-25T10:29:49.489Z
+[2026-02-25T10:29:49.489Z] [INFO] Updating BackendFacade configuration...
+2026-02-25T10:29:49.981Z
+[2026-02-25T10:29:49.981Z] [INFO] API Key: Present
+2026-02-25T10:29:49.982Z
+[2026-02-25T10:29:49.981Z] [INFO] API Endpoint: https://kaviaqa-worktool.cloud.kavia.ai/api
+2026-02-25T10:29:49.982Z
+[2026-02-25T10:29:49.982Z] [DEBUG] [SYNC] WorkspaceSnapshotService initialized
+2026-02-25T10:29:49.982Z
+[2026-02-25T10:29:49.982Z] [INFO] [SYNC] GitHubIntegrationService initialized
+  Metadata: {
+  "authenticated": false,
+  "publicReposOnly": true
+}
+2026-02-25T10:29:49.982Z
+[2026-02-25T10:29:49.982Z] [INFO] [SYNC] WorkspaceApplierService initialized
+  Metadata: {
+  "backupDir": "/Users/chrismaxwell/Library/Application Support/Code/User/globalStorage/kavia.kavia-ai/file-backups"
+}
+2026-02-25T10:29:49.982Z
+[2026-02-25T10:29:49.982Z] [INFO] [GitQueue] GitOperationQueueService initialized
+2026-02-25T10:29:49.982Z
+[2026-02-25T10:29:49.982Z] [INFO] CodeMaintenanceService initialized
+2026-02-25T10:29:49.982Z
+[2026-02-25T10:29:49.982Z] [INFO] [CODE GEN SERVICE] Initialized
+2026-02-25T10:29:49.983Z
+[2026-02-25T10:29:49.983Z] [INFO] ℹ️ No session data found
+2026-02-25T10:29:49.983Z
+[2026-02-25T10:29:49.983Z] [INFO] [SYNC] 🚀 BackendGitCommandService constructor called
+2026-02-25T10:29:49.983Z
+[2026-02-25T10:29:49.983Z] [INFO] [SYNC] 🚀 BackendGitCommandService initialization complete
+2026-02-25T10:29:49.983Z
+[2026-02-25T10:29:49.983Z] [INFO] [SYNC] CommitReviewStateService initialized
+2026-02-25T10:29:49.983Z
+[2026-02-25T10:29:49.983Z] [INFO] [SYNC] CodeSynchronizationService initialized with ChatService integration and BackendGitCommandService
+2026-02-25T10:29:49.983Z
+[2026-02-25T10:29:49.983Z] [INFO] 🔧 Setting up centralized WebSocket callbacks
+2026-02-25T10:29:49.983Z
+[2026-02-25T10:29:49.983Z] [INFO] ✅ Centralized WebSocket callbacks configured
+2026-02-25T10:29:49.983Z
+[2026-02-25T10:29:49.983Z] [INFO] 🔄 CodeSynchronizationService registered with ChatService
+2026-02-25T10:29:49.983Z
+[2026-02-25T10:29:49.983Z] [INFO] ✅ CodeSynchronizationService registered with ChatService (bidirectional integration)
+2026-02-25T10:29:49.983Z
+[2026-02-25T10:29:49.983Z] [INFO] ✅ Shared CGAWebSocketService instance used by both ChatService and CodeSynchronizationService
+2026-02-25T10:29:49.983Z
+[2026-02-25T10:29:49.983Z] [INFO] Registered provider: OpenRouter (openrouter)
+2026-02-25T10:29:49.983Z
+[2026-02-25T10:29:49.983Z] [INFO] Registered provider: OpenAI (openAI)
+2026-02-25T10:29:49.983Z
+[2026-02-25T10:29:49.983Z] [INFO] Registered provider: Kavia AI (kaviaAI)
+2026-02-25T10:29:49.983Z
+[2026-02-25T10:29:49.983Z] [INFO] Session data is stale, skipping restoration
+2026-02-25T10:29:49.983Z
+[2026-02-25T10:29:49.983Z] [ERROR] ❌ Session restoration failed: Session was stale and has been cleared
+2026-02-25T10:29:49.983Z
+[2026-02-25T10:29:49.983Z] [INFO] Clearing session
+2026-02-25T10:29:49.983Z
+[2026-02-25T10:29:49.983Z] [INFO] Session saved to storage
+2026-02-25T10:29:49.984Z
+[2026-02-25T10:29:49.983Z] [INFO] ✅ ChatService initialized: 0 messages restored, session: none
+2026-02-25T10:29:50.296Z
+[2026-02-25T10:29:50.296Z] [INFO] [SYNC] ReviewChangesProvider initialized
+2026-02-25T10:29:50.296Z
+[2026-02-25T10:29:50.296Z] [INFO] ✅ ReviewChangesProvider initialized and callback wired
+2026-02-25T10:29:50.296Z
+[2026-02-25T10:29:50.296Z] [INFO] [SYNC] BranchLifecycleManager initialized
+2026-02-25T10:29:50.447Z
+[2026-02-25T10:29:50.447Z] [INFO] ✅ Review commands registered
+2026-02-25T10:29:50.447Z
+[2026-02-25T10:29:50.447Z] [INFO] ✅ Extension activated successfully
+2026-02-25T10:29:50.447Z
+[2026-02-25T10:29:50.447Z] [INFO] ✅ [extension:activate] Success
+[
+  {
+    "contextId": "extension:activate"
+  }
+]
+2026-02-25T10:29:51.643Z
+[2026-02-25T10:29:51.643Z] [INFO] [message:chatView:message] Executing...
+[
+  {
+    "contextId": "message:chatView:message"
+  }
+]
+2026-02-25T10:29:51.643Z
+[2026-02-25T10:29:51.643Z] [INFO] 📬 Webview message received: ready
+2026-02-25T10:29:51.644Z
+[2026-02-25T10:29:51.644Z] [INFO] ✅ [message:chatView:message] Success
+[
+  {
+    "contextId": "message:chatView:message"
+  }
+]
+2026-02-25T10:29:51.644Z
+[2026-02-25T10:29:51.644Z] [INFO] [message:chatView:message] Executing...
+[
+  {
+    "contextId": "message:chatView:message"
+  }
+]
+2026-02-25T10:29:51.644Z
+[2026-02-25T10:29:51.644Z] [INFO] 📬 Webview message received: getContext
+2026-02-25T10:29:51.644Z
+[2026-02-25T10:29:51.644Z] [INFO] ✅ [message:chatView:message] Success
+[
+  {
+    "contextId": "message:chatView:message"
+  }
+]
+2026-02-25T10:29:51.644Z
+[2026-02-25T10:29:51.644Z] [INFO] [message:chatView:message] Executing...
+[
+  {
+    "contextId": "message:chatView:message"
+  }
+]
+2026-02-25T10:29:51.644Z
+[2026-02-25T10:29:51.644Z] [INFO] 📬 Webview message received: checkAuthStatus
+2026-02-25T10:29:51.644Z
+[2026-02-25T10:29:51.644Z] [INFO] ✅ [message:chatView:message] Success
+[
+  {
+    "contextId": "message:chatView:message"
+  }
+]
+2026-02-25T10:29:51.647Z
+[2026-02-25T10:29:51.647Z] [INFO] Getting sessions for scopes: profile, email
+2026-02-25T10:29:51.651Z
+[2026-02-25T10:29:51.651Z] [INFO] [message:chatView:message] Executing...
+[
+  {
+    "contextId": "message:chatView:message"
+  }
+]
+2026-02-25T10:29:51.651Z
+[2026-02-25T10:29:51.651Z] [INFO] 📬 Webview message received: ready
+2026-02-25T10:29:51.651Z
+[2026-02-25T10:29:51.651Z] [INFO] ✅ [message:chatView:message] Success
+[
+  {
+    "contextId": "message:chatView:message"
+  }
+]
+2026-02-25T10:29:51.651Z
+[2026-02-25T10:29:51.651Z] [INFO] [message:chatView:message] Executing...
+[
+  {
+    "contextId": "message:chatView:message"
+  }
+]
+2026-02-25T10:29:51.651Z
+[2026-02-25T10:29:51.651Z] [INFO] 📬 Webview message received: getContext
+2026-02-25T10:29:51.652Z
+[2026-02-25T10:29:51.652Z] [INFO] ✅ [message:chatView:message] Success
+[
+  {
+    "contextId": "message:chatView:message"
+  }
+]
+2026-02-25T15:49:36.950Z
+[2026-02-25T15:49:36.949Z] [INFO] [extension:deactivate] Executing...
+[
+  {
+    "contextId": "extension:deactivate"
+  }
+]
+2026-02-25T15:49:36.950Z
+[2026-02-25T15:49:36.950Z] [INFO] 🔴 Extension deactivating
+2026-02-25T15:49:36.951Z
+[2026-02-25T15:49:36.951Z] [INFO] StreamingEditorService disposed
+2026-02-25T15:49:36.952Z
+[2026-02-25T15:49:36.952Z] [INFO] 🗑️ WebSocket status indicator disposed
+2026-02-25T15:49:36.954Z
+[2026-02-25T15:49:36.954Z] [INFO] [GitQueue] GitOperationQueueService disposed
+2026-02-25T15:49:36.957Z
+[2026-02-25T15:49:36.957Z] [INFO] [CODE GEN SERVICE] Disposed
+2026-02-25T15:49:36.958Z
+[2026-02-25T15:49:36.958Z] [INFO] FileStreamViewProvider disposed
+2026-02-25T15:49:36.958Z
+[2026-02-25T15:49:36.958Z] [INFO] [SYNC] ReviewChangesProvider disposed
+2026-02-25T15:49:36.959Z
+[2026-02-25T15:49:36.959Z] [INFO] [SYNC] BranchLifecycleManager disposed
+2026-02-25T15:49:37.103Z
+[2026-02-25T15:49:37.103Z] [INFO] Kavia.ai extension is deactivating...
+2026-02-25T15:49:37.103Z
+[2026-02-25T15:49:37.103Z] [INFO] Waiting for any in-progress git operations to complete...
+2026-02-25T15:49:37.103Z
+[2026-02-25T15:49:37.103Z] [INFO] [GitQueue] Ready to dispose after all operations completed
+2026-02-25T15:49:37.104Z
+[2026-02-25T15:49:37.104Z] [INFO] [GitQueue] GitOperationQueueService disposed
+2026-02-25T15:49:37.104Z
+[2026-02-25T15:49:37.104Z] [INFO] GitOperationQueueService disposed
+
+================================================================================
+Session Ended: 2026-02-25T15:49:37.105Z
+================================================================================
