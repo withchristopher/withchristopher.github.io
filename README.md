@@ -1,13 +1,14 @@
 <h1 align="center">
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Roboto+Serif&size=15&duration=7500&color=3F94F7&center=true&vCenter=true&lines=My+name+is+Christopher+Maxwell%2C+I+am+a+full-stack+developer...;Solving+the+problems+with+misinformation+at+Factiverse...;I+am+based+in+Oslo%2C+Norway.;+I+was+born+in+Cape+Town%2C+South+Africa.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Roboto+Serif&size=15&duration=7500&color=3F94F7&center=true&vCenter=true&lines=My+name+is+Christopher+Maxwell%2C+I+am+a+full-stack+developer)]
+
 </h1>
 
 <article align="center">
   I am Christopher Maxwell. I lived in South Africa for my first 30 years. I have skills
   in designing secure network infrastructure as a systems engineer at Cisco. I have built open source software for the courts in The Hague.
   
-  I currently work as an engineer for a research based startup solving one of the largest problems we face in the digital world, misinformation. You can see more about Factiverse AS [here](https://www.factiverse.no)
+  I currently work as an engineer for a research based startup solving one of the largest problems we face in the digital world, misinformation. You can see more about Factiverse AS [here](https://www.factiverse.no/).
 
   I hold a BSc Mathematics and Physics (RU) and BSc(HONS) in Quantum Information Science (UKZN).
 
@@ -42,7 +43,7 @@
 <div>
 <p align="center">Portfolio</p>
 </div>
-<a target="_blank" href="https://lifefile.co.za/">
+<a target="_blank" href="https://github.com/withchristopher/web-agent-cf">
                         <img style="padding:1rem"  src="images/feature-tile-icon-00.gif" alt="Feature tile icon 00" width="45%" />
                       </a>
  <a target="_blank" href="https://learning-module-application.herokuapp.com/">
@@ -71,6 +72,6 @@
 <h4 align="center">
 Credit: [withchristopher](https://github.com/withchristopher)
 
-Last Edited on: 01/05/2022.
+Last Edited on: 13/05/2026.
   
 </h4>
