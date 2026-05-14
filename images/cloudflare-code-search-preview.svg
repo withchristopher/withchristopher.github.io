@@ -1,0 +1,58 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Cloudflare Code Search Preview</title>
+  <desc id="desc">Preview of a Cloudflare vector search workspace for indexing public GitHub repositories, reading CodeWiki summaries, and searching with keyword, semantic, or hybrid retrieval.</desc>
+  <rect width="1200" height="675" fill="#0D1117"/>
+  <rect x="48" y="44" width="1104" height="587" rx="18" fill="#161B22" stroke="#30363D" stroke-width="2"/>
+  <rect x="84" y="80" width="1032" height="74" rx="12" fill="#0B1118" stroke="#30363D"/>
+  <path d="M126 127H98c-10 0-18-8-18-18s8-18 18-18c2 0 4 .3 6 .9C109 83 119 77 130 77c15 0 27 10 30 24h2c8 0 14 6 14 14s-6 12-14 12h-20l5-16h-16l7-21-31 29h21l-2 8Z" fill="#F6821F"/>
+  <path d="M142 127h20c8 0 14-5 14-12 0-6-4-11-10-13l-19 9-5 16Z" fill="#FBAD41"/>
+  <text x="204" y="107" fill="#F0F6FC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="29" font-weight="800">Cloudflare Vector Search CodeWiki</text>
+  <text x="205" y="132" fill="#9DA7B3" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">Deep, fast code search for public GitHub repositories</text>
+  <rect x="84" y="184" width="320" height="364" rx="14" fill="#1F242D" stroke="#30363D"/>
+  <text x="120" y="228" fill="#F0F6FC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="800">Repositories</text>
+  <rect x="120" y="258" width="248" height="44" rx="8" fill="#0D1117" stroke="#30363D"/>
+  <text x="144" y="286" fill="#9DA7B3" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">owner/repository</text>
+  <rect x="120" y="318" width="134" height="38" rx="8" fill="#2EA043"/>
+  <text x="153" y="342" fill="#F0F6FC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="800">Add Repo</text>
+  <rect x="120" y="392" width="248" height="88" rx="10" fill="#0D1117" stroke="#30363D"/>
+  <text x="144" y="424" fill="#F0F6FC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="800">victoriancode/app</text>
+  <rect x="144" y="444" width="176" height="12" rx="6" fill="#30363D"/>
+  <rect x="144" y="444" width="124" height="12" rx="6" fill="#58A6FF"/>
+  <text x="144" y="468" fill="#9DA7B3" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">Indexing 70%</text>
+  <rect x="436" y="184" width="680" height="116" rx="14" fill="#1F242D" stroke="#30363D"/>
+  <text x="472" y="228" fill="#F0F6FC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="800">Search workspace</text>
+  <rect x="472" y="250" width="424" height="36" rx="8" fill="#0D1117" stroke="#30363D"/>
+  <text x="496" y="274" fill="#9DA7B3" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">natural language or code symbols</text>
+  <rect x="916" y="250" width="58" height="36" rx="18" fill="#58A6FF"/>
+  <text x="933" y="273" fill="#0B1118" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="800">K</text>
+  <rect x="984" y="250" width="58" height="36" rx="18" fill="#7EE787"/>
+  <text x="1001" y="273" fill="#0B1118" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="800">S</text>
+  <rect x="1052" y="250" width="58" height="36" rx="18" fill="#FBAD41"/>
+  <text x="1068" y="273" fill="#0B1118" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="800">H</text>
+  <rect x="436" y="332" width="324" height="216" rx="14" fill="#1F242D" stroke="#30363D"/>
+  <text x="472" y="376" fill="#F0F6FC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="800">CodeWiki</text>
+  <rect x="472" y="404" width="224" height="14" rx="7" fill="#58A6FF"/>
+  <rect x="472" y="436" width="252" height="14" rx="7" fill="#7EE787"/>
+  <rect x="472" y="468" width="190" height="14" rx="7" fill="#FBAD41"/>
+  <rect x="472" y="500" width="232" height="14" rx="7" fill="#30363D"/>
+  <rect x="792" y="332" width="324" height="216" rx="14" fill="#1F242D" stroke="#30363D"/>
+  <text x="828" y="376" fill="#F0F6FC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="800">Retrieval</text>
+  <path d="M846 476c38-62 86-62 124 0s86 62 124 0" stroke="#58A6FF" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="846" cy="476" r="10" fill="#7EE787"/>
+  <circle cx="970" cy="476" r="10" fill="#FBAD41"/>
+  <circle cx="1094" cy="476" r="10" fill="#58A6FF"/>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="800">
+    <rect x="154" y="577" width="92" height="28" rx="14" fill="#0D1117" stroke="#30363D"/>
+    <text x="177" y="596" fill="#F0F6FC">Next.js</text>
+    <rect x="266" y="577" width="92" height="28" rx="14" fill="#0D1117" stroke="#30363D"/>
+    <text x="286" y="596" fill="#F0F6FC">GitHub</text>
+    <rect x="378" y="577" width="116" height="28" rx="14" fill="#0D1117" stroke="#30363D"/>
+    <text x="402" y="596" fill="#F0F6FC">Workers AI</text>
+    <rect x="514" y="577" width="102" height="28" rx="14" fill="#0D1117" stroke="#30363D"/>
+    <text x="538" y="596" fill="#F0F6FC">Vectorize</text>
+    <rect x="636" y="577" width="64" height="28" rx="14" fill="#0D1117" stroke="#30363D"/>
+    <text x="659" y="596" fill="#F0F6FC">D1</text>
+    <rect x="720" y="577" width="80" height="28" rx="14" fill="#0D1117" stroke="#30363D"/>
+    <text x="743" y="596" fill="#F0F6FC">Pages</text>
+  </g>
+</svg>
