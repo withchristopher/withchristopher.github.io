@@ -1,6 +1,6 @@
 <svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Cloudflare Code Search Preview</title>
-  <desc id="desc">Preview of a Cloudflare vector search workspace for indexing public GitHub repositories, reading CodeWiki summaries, and searching with keyword, semantic, or hybrid retrieval.</desc>
+  <title id="title">Deep Code Hybrid Search Preview</title>
+  <desc id="desc">Preview of a Deep vector search workspace for indexing public GitHub repositories, reading CodeWiki summaries, and searching with keyword, semantic, or hybrid retrieval.</desc>
   <rect width="1200" height="675" fill="#0D1117"/>
   <rect x="48" y="44" width="1104" height="587" rx="18" fill="#161B22" stroke="#30363D" stroke-width="2"/>
   <rect x="84" y="80" width="1032" height="74" rx="12" fill="#0B1118" stroke="#30363D"/>
